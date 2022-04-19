@@ -1,24 +1,7 @@
-# README
+# Kittens API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Quick Take
 
-Things you may want to cover:
+For this project, the task is to create a Rails app to be a data-producing API with controller methods that render data instead of HTML. This does not use any external API. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See full details from [The Odin Project.](https://www.theodinproject.com/lessons/ruby-on-rails-kittens-api)
