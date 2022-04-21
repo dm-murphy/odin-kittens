@@ -16,9 +16,23 @@ class KittensController < ApplicationController
   end
 
   def create
+    @kitten = Kitten.new(kitten_params)
+ 
+    if @kitten.save
+      redirect_to root_path
+    else
+      render :new
+    end 
   end
 
   def update
+    @kitten = Kitten.find(params[:id])
+
+    if @kitten.update(kitten_params)
+      redirect_to @kitten
+    else
+      render :edit
+    end
   end
 
   def destroy
@@ -27,4 +41,9 @@ class KittensController < ApplicationController
 
     redirect_to root_path
   end
+
+  private
+    def kitten_params
+      params.require(:kitten).permit(:name, :age, :cuteness, :softness)
+    end
 end
