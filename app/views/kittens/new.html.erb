@@ -1,14 +1,2 @@
-<%= form_with model: @kitten do |form| %>
-  <%= form.label :name, "Name your kitten" %><br>
-  <%= form.text_field :title %><br>
-  <br>
-  <%= form.label :age, "How old is your kitten?" %><br>
-  <%= form.number_field :age %><br>
-  <br>
-  <%= form.label :cuteness, "How cute is your kitten? (1 - 10)" %><br>
-  <%= form.number_field :cuteness %><br>
-  <br>
-  <%= form.label :softness, "How soft is your kitten? (1 - 10)" %><br>
-  <%= form.number_field :softness %><br>
-  <%= form.submit "Submit" %>
-<% end %>
+<h2>New Kitten!</h2>
+<%= render 'new_form' %>
