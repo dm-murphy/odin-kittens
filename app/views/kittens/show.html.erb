@@ -1,5 +1,7 @@
-<% @kitten.name %>
-<% @kitten.age %>
-<% @kitten.cuteness %>
-<% @kitten.softness %>
-<%= link_to "Delete Kitten", @kitten, method: "delete", confirm: "Are you sure?", disable_with: "Processing..." %>
+<ul>
+  <li>Name: <%= @kitten.name %></li>
+  <li>Age: <%= @kitten.age %></li>
+  <li>Cuteness: <%= @kitten.cuteness %></li>
+  <li>Softness: <%= @kitten.softness %></li>
+  <li><%= link_to "Delete Kitten", @kitten, method: "delete", confirm: "Are you sure?", disable_with: "Processing..." %></li>
+</ul>
