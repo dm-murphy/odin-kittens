@@ -1,6 +1,6 @@
 <% @kittens.each do |kitten| %>
   <ul>
     <li><%= kitten.name %></li>
-    <%= link_to "Delete Kitten", @kitten, method: "delete", confirm: "Are you sure?", disable_with: "Processing..." %>
+    <%= button_to 'Delete Kitten', kitten, method: :delete %>
   </ul>
 <% end %>
